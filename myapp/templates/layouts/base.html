@@ -1,0 +1,36 @@
+{% load static %} <!-- Static -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DjangoProjectst</title>
+    <link rel="stylesheet" href="{% static 'styles/main.css' %}"> <!-- Static -->
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="{% url 'n_index' %}">Home</a>
+            </li>
+            <li>
+                <a href="{% url 'n_projects' %}">Projects</a> <!--  -->
+            </li>
+            <li>
+                <a href="{% url 'n_create_task' %}">Ceate Task</a> <!--  -->
+            </li>
+            <li>
+                <a href="{% url 'n_tasks' %}">Task</a> <!--  -->
+            </li>
+            <li>
+                <a href="{% url 'n_create_project' %}">Create a Project</a> <!--  -->
+            </li>
+        </ul>
+    </nav>
+    
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
