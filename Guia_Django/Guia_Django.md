@@ -431,7 +431,9 @@ def projects(request):
 ```
 ![project](./img/captura_4.png)
 
-### Jinja Loops
+### Jinja Loops (**not is Jinja is Django Templates**)
+
+*'Django Templates' is the defaul template engine of django
 
 jinja is a template engine, and it allows us to use programing functions in an html file. [This](https://jinja.palletsprojects.com/en/3.1.x/) is the documentation.
 
